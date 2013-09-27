@@ -1,13 +1,14 @@
 'use strict';
 
-angular.module('editorApp', [])
-  .config(['$routeProvider', function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  }]);
+// TODO vucalur: rename: editorApp → editor
+angular.module('editorApp', ['editorAppServices'])
+	.config(['$routeProvider', function ($routeProvider) {
+		$routeProvider
+			.when('/editor', {
+				templateUrl: 'views/edit.html',
+				controller: 'EditCtrl'
+			})
+			.otherwise({
+				redirectTo: '/editor'
+			});
+	}]);
