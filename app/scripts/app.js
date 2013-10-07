@@ -1,7 +1,7 @@
 'use strict';
 
 // TODO vucalur: rename: editorApp → editor
-angular.module('editorApp', ['editorAppServices'])
+angular.module('editorApp', ['ngRoute', 'editorAppServices'])
 	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
 			.when('/editor', {
