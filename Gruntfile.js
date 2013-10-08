@@ -248,26 +248,42 @@ module.exports = function (grunt) {
     // Put files not handled in other tasks here
     copy: {
       dist: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.app %>',
-          dest: '<%= yeoman.dist %>',
-          src: [
-            '*.{ico,png,txt}',
-            '.htaccess',
-            'bower_components/**/*',
-            'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
-          ]
-        }, {
-          expand: true,
-          cwd: '.tmp/images',
-          dest: '<%= yeoman.dist %>/images',
-          src: [
-            'generated/*'
-          ]
-        }]
+        files: [
+          {
+            expand: true,
+            dot: true,
+            cwd: '<%= yeoman.app %>',
+            dest: '<%= yeoman.dist %>',
+            src: [
+              '*.{ico,png,txt}',
+              '.htaccess',
+              'bower_components/**/*',
+              'images/{,*/}*.{gif,webp}',
+              'styles/fonts/*'
+            ]
+          },
+          {
+            expand: true,
+            cwd: '.tmp/images',
+            dest: '<%= yeoman.dist %>/images',
+            src: [
+              'generated/*'
+            ]
+          },
+          {
+            expand: true,
+            dest: '<%= yeoman.dist %>',
+            cwd: 'heroku',
+            src: '*',
+            rename: function (dest, src) {
+              var path = require('path');
+              if (src === 'distpackage.json') {
+                return path.join(dest, 'package.json');
+              }
+              return path.join(dest, src);
+            }
+          }
+        ]
       },
       styles: {
         expand: true,
