@@ -27,7 +27,7 @@
 			},
 			"sentences": [
 				{
-					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence"},
+					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence 1"},
 					"slots": [
 						{
 							"params": {"obligatory": false, "threshold": 60, "name": "Sample slot"},
@@ -40,7 +40,7 @@
 					]
 				},
 				{
-					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence"},
+					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence 2"},
 					"slots": [
 						{
 							"params": {"obligatory": false, "threshold": 60, "name": "Sample slot"},
@@ -53,7 +53,7 @@
 					]
 				},
 				{
-					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence"},
+					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence 3"},
 					"slots": [
 						{
 							"params": {"obligatory": false, "threshold": 60, "name": "Sample slot"},
@@ -74,7 +74,7 @@
 			},
 			"sentences": [
 				{
-					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence"},
+					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence 1"},
 					"slots": [
 						{
 							"params": {"obligatory": false, "threshold": 60, "name": "Sample slot"},
@@ -87,7 +87,7 @@
 					]
 				},
 				{
-					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence"},
+					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence 2"},
 					"slots": [
 						{
 							"params": {"obligatory": false, "threshold": 60, "name": "Sample slot"},
@@ -100,7 +100,7 @@
 					]
 				},
 				{
-					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence"},
+					"params": {"obligatory": false, "threshold": 55, "name": "Sample Sentence 3"},
 					"slots": [
 						{
 							"params": {"obligatory": false, "threshold": 60, "name": "Sample slot"},
