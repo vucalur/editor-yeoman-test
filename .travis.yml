@@ -3,8 +3,7 @@ node_js:
   - '0.8'
   - '0.10'
 before_install:
-  - 'npm install -g bower grunt-cli'
-  - 'bower install'
-  - './.travis/scripts/install_chrome.sh'
+  - "npm install -g bower grunt-cli"
+  - "bower install"
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
